@@ -1,4 +1,4 @@
-package main
+package swagexpander_test
 
 import (
 	"fmt"
@@ -8,6 +8,7 @@ import (
 	"testing"
 
 	"gopkg.in/yaml.v2"
+	swagexpander "github.com/breise/swagExpander"
 )
 
 type testCase struct {
@@ -108,7 +109,7 @@ items:
 			if err := yaml.Unmarshal(inp, &thing); err != nil {
 				t.Fatalf("cannot unmarshal '%s'. Error: %s", inp, err)
 			}
-			got, gotErr := copyAndExpand(thing)
+			got, gotErr := swagexpander.CopyAndExpand(thing)
 			if expError == "" {
 				if gotErr != nil {
 					t.Fatal(gotErr)

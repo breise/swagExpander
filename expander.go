@@ -1,4 +1,4 @@
-package main
+package swagexpander
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"github.com/breise/rstack"
 )
 
-func copyAndExpand(node interface{}) (interface{}, error) {
+func CopyAndExpand(node interface{}) (interface{}, error) {
 	// fmt.Println("============ copyAndExpand ================")
 	// fmt.Printf("node: %s\n", node)
 	rv, err := cpAndExp(rstack.New(), node, node)
