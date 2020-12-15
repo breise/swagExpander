@@ -1,4 +1,4 @@
-module github.com/breise/swagExpander
+module github.com/breise/swagexpander
 
 go 1.15
 
