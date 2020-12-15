@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"gopkg.in/yaml.v2"
-	swagexpander "github.com/breise/swagExpander"
+	"github.com/breise/swagexpander"
 )
 
 type testCase struct {
